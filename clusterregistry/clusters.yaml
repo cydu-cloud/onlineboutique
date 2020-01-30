@@ -1,6 +1,13 @@
 kind: Cluster
 apiVersion: clusterregistry.k8s.io/v1alpha1
 metadata:
-  name: gke-cydev1-us-central1-f-sfo
+  name: gke-sfo
   labels:
     environment: sfo
+---
+kind: Cluster
+apiVersion: clusterregistry.k8s.io/v1alpha1
+metadata:
+  name: tencent-pek
+  labels:
+    environment: pek

@@ -6,3 +6,12 @@ spec:
   selector:
     matchLabels:
       environment: sfo
+---
+kind: ClusterSelector
+apiVersion: configmanagement.gke.io/v1
+metadata:
+  name: pek
+spec:
+  selector:
+    matchLabels:
+      environment: pek
