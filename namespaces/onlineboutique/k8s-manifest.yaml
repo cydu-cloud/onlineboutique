@@ -30,7 +30,8 @@ spec:
         app: emailservice
     spec:
       terminationGracePeriodSeconds: 5
-      imagePullSecrets: qcloudregistrykey
+      imagePullSecrets:
+        - name: qcloudregistrykey
       containers:
       - name: server
         image: ccr.ccs.tencentyun.com/abox-cy/gcr.io-google-samples-microservices-demo-emailservice:v0.1.2
@@ -78,7 +79,8 @@ spec:
       labels:
         app: shoppingcartservice
     spec:
-      imagePullSecrets: qcloudregistrykey
+      imagePullSecrets:
+        - name: qcloudregistrykey
       containers:
         - name: server
           image: ccr.ccs.tencentyun.com/abox-cy/gcr.io-google-samples-microservices-demo-checkoutservice:v0.1.2
@@ -140,7 +142,8 @@ spec:
         app: recommendationservice
     spec:
       terminationGracePeriodSeconds: 5
-      imagePullSecrets: qcloudregistrykey
+      imagePullSecrets:
+        - name: qcloudregistrykey
       containers:
       - name: server
         image: ccr.ccs.tencentyun.com/abox-cy/gcr.io-google-samples-microservices-demo-recommendationservice:v0.1.2
@@ -191,7 +194,8 @@ spec:
       labels:
         app: frontend
     spec:
-      imagePullSecrets: qcloudregistrykey
+      imagePullSecrets:
+        - name: qcloudregistrykey
       containers:
         - name: server
           image: ccr.ccs.tencentyun.com/abox-cy/gcr.io-onlineboutique-frontend:0.1.2
@@ -278,7 +282,8 @@ spec:
         app: paymentservice
     spec:
       terminationGracePeriodSeconds: 5
-      imagePullSecrets: qcloudregistrykey
+      imagePullSecrets:
+        - name: qcloudregistrykey
       containers:
       - name: server
         image: ccr.ccs.tencentyun.com/abox-cy/gcr.io-google-samples-microservices-demo-paymentservice:v0.1.2
@@ -328,7 +333,8 @@ spec:
         app: productcatalogservice
     spec:
       terminationGracePeriodSeconds: 5
-      imagePullSecrets: qcloudregistrykey
+      imagePullSecrets:
+        - name: qcloudregistrykey
       containers:
       - name: server
         image: ccr.ccs.tencentyun.com/abox-cy/gcr.io-onlineboutique-productcatalogservice:0.1.2
@@ -378,7 +384,8 @@ spec:
         app: cartservice
     spec:
       terminationGracePeriodSeconds: 5
-      imagePullSecrets: qcloudregistrykey
+      imagePullSecrets:
+        - name: qcloudregistrykey
       containers:
       - name: server
         image: ccr.ccs.tencentyun.com/abox-cy/gcr.io-google-samples-microservices-demo-cartservice:v0.1.2
@@ -448,7 +455,8 @@ spec:
         env:
         - name: FRONTEND_ADDR
           value: "frontend:80"
-      imagePullSecrets: qcloudregistrykey
+      imagePullSecrets:
+        - name: qcloudregistrykey
       containers:
       - name: main
         image: ccr.ccs.tencentyun.com/abox-cy/gcr.io-google-samples-microservices-demo-loadgenerator:v0.1.2
@@ -479,7 +487,8 @@ spec:
         app: currencyservice
     spec:
       terminationGracePeriodSeconds: 5
-      imagePullSecrets: qcloudregistrykey
+      imagePullSecrets:
+        - name: qcloudregistrykey
       containers:
       - name: server
         image: ccr.ccs.tencentyun.com/abox-cy/gcr.io-google-samples-microservices-demo-currencyservice:v0.1.2
@@ -529,7 +538,8 @@ spec:
       labels:
         app: shippingservice
     spec:
-      imagePullSecrets: qcloudregistrykey
+      imagePullSecrets:
+        - name: qcloudregistrykey
       containers:
       - name: server
         image: ccr.ccs.tencentyun.com/abox-cy/gcr.io-google-samples-microservices-demo-shippingservice:v0.1.2
@@ -633,7 +643,8 @@ spec:
         app: adservice
     spec:
       terminationGracePeriodSeconds: 5
-      imagePullSecrets: qcloudregistrykey
+      imagePullSecrets:
+        - name: qcloudregistrykey
       containers:
       - name: server
         image: ccr.ccs.tencentyun.com/abox-cy/gcr.io-google-samples-microservices-demo-adservice:v0.1.2
