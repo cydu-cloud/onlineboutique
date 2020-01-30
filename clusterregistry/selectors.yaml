@@ -1,15 +1,6 @@
 kind: ClusterSelector
 apiVersion: configmanagement.gke.io/v1
 metadata:
-  name: pek
-spec:
-  selector:
-    matchLabels:
-      environment: pek
----
-kind: ClusterSelector
-apiVersion: configmanagement.gke.io/v1
-metadata:
   name: sfo
 spec:
   selector:
