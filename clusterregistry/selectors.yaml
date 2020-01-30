@@ -1,17 +1,17 @@
 kind: ClusterSelector
 apiVersion: configmanagement.gke.io/v1
 metadata:
-  name: istio
+  name: pek
 spec:
   selector:
     matchLabels:
-      environment: istio
+      environment: pek
 ---
 kind: ClusterSelector
 apiVersion: configmanagement.gke.io/v1
 metadata:
-  name: csm
+  name: sfo
 spec:
   selector:
     matchLabels:
-      environment: csm
+      environment: sfo

@@ -1,13 +1,13 @@
 kind: Cluster
 apiVersion: clusterregistry.k8s.io/v1alpha1
 metadata:
-  name: pre-prod
+  name: gke_cydev1_us-central1-f_sfo
   labels:
-    environment: csm
+    environment: sfo
 ---
 kind: Cluster
 apiVersion: clusterregistry.k8s.io/v1alpha1
 metadata:
-  name: prod
+  name: cls-cxzg1qb9-pek
   labels:
-    environment: csm
+    environment: pek
