@@ -33,7 +33,7 @@ spec:
       imagePullSecrets: qcloudregistrykey
       containers:
       - name: server
-        image: gcr.io/google-samples/microservices-demo/emailservice:v0.1.2
+        image: ccr.ccs.tencentyun.com/abox-cy/gcr.io-google-samples-microservices-demo-emailservice:v0.1.2
         ports:
         - containerPort: 8080
         readinessProbe:
@@ -81,7 +81,7 @@ spec:
       imagePullSecrets: qcloudregistrykey
       containers:
         - name: server
-          image: gcr.io/google-samples/microservices-demo/checkoutservice:v0.1.2
+          image: ccr.ccs.tencentyun.com/abox-cy/gcr.io-google-samples-microservices-demo-checkoutservice:v0.1.2
           ports:
           - containerPort: 5050
           readinessProbe:
@@ -143,7 +143,7 @@ spec:
       imagePullSecrets: qcloudregistrykey
       containers:
       - name: server
-        image: gcr.io/google-samples/microservices-demo/recommendationservice:v0.1.2
+        image: ccr.ccs.tencentyun.com/abox-cy/gcr.io-google-samples-microservices-demo-recommendationservice:v0.1.2
         ports:
         - containerPort: 8080
         readinessProbe:
@@ -194,7 +194,7 @@ spec:
       imagePullSecrets: qcloudregistrykey
       containers:
         - name: server
-          image: gcr.io/onlineboutique/frontend:0.1.2
+          image: ccr.ccs.tencentyun.com/abox-cy/gcr.io-onlineboutique-frontend:0.1.2
           ports:
           - containerPort: 8080
           readinessProbe:
@@ -281,7 +281,7 @@ spec:
       imagePullSecrets: qcloudregistrykey
       containers:
       - name: server
-        image: gcr.io/google-samples/microservices-demo/paymentservice:v0.1.2
+        image: ccr.ccs.tencentyun.com/abox-cy/gcr.io-google-samples-microservices-demo-paymentservice:v0.1.2
         ports:
         - containerPort: 50051
         env:
@@ -331,7 +331,7 @@ spec:
       imagePullSecrets: qcloudregistrykey
       containers:
       - name: server
-        image: gcr.io/onlineboutique/productcatalogservice:0.1.2
+        image: ccr.ccs.tencentyun.com/abox-cy/gcr.io-onlineboutique-productcatalogservice:0.1.2
         ports:
         - containerPort: 3550
         readinessProbe:
@@ -381,7 +381,7 @@ spec:
       imagePullSecrets: qcloudregistrykey
       containers:
       - name: server
-        image: gcr.io/google-samples/microservices-demo/cartservice:v0.1.2
+        image: ccr.ccs.tencentyun.com/abox-cy/gcr.io-google-samples-microservices-demo-cartservice:v0.1.2
         ports:
         - containerPort: 7070
         env:
@@ -451,7 +451,7 @@ spec:
       imagePullSecrets: qcloudregistrykey
       containers:
       - name: main
-        image: gcr.io/google-samples/microservices-demo/loadgenerator:v0.1.2
+        image: ccr.ccs.tencentyun.com/abox-cy/gcr.io-google-samples-microservices-demo-loadgenerator:v0.1.2
         env:
         - name: FRONTEND_ADDR
           value: "frontend:80"
@@ -482,7 +482,7 @@ spec:
       imagePullSecrets: qcloudregistrykey
       containers:
       - name: server
-        image: gcr.io/google-samples/microservices-demo/currencyservice:v0.1.2
+        image: ccr.ccs.tencentyun.com/abox-cy/gcr.io-google-samples-microservices-demo-currencyservice:v0.1.2
         ports:
         - name: grpc
           containerPort: 7000
@@ -532,7 +532,7 @@ spec:
       imagePullSecrets: qcloudregistrykey
       containers:
       - name: server
-        image: gcr.io/google-samples/microservices-demo/shippingservice:v0.1.2
+        image: ccr.ccs.tencentyun.com/abox-cy/gcr.io-google-samples-microservices-demo-shippingservice:v0.1.2
         ports:
         - containerPort: 50051
         readinessProbe:
@@ -636,7 +636,7 @@ spec:
       imagePullSecrets: qcloudregistrykey
       containers:
       - name: server
-        image: gcr.io/google-samples/microservices-demo/adservice:v0.1.2
+        image: ccr.ccs.tencentyun.com/abox-cy/gcr.io-google-samples-microservices-demo-adservice:v0.1.2
         ports:
         - containerPort: 9555
         env:
