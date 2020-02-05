@@ -1,0 +1,19 @@
+apiVersion: constraints.gatekeeper.sh/v1beta1
+kind: K8sAllowedRepos
+metadata:
+  name: only-gcr-repo-for-demo-ns
+spec:
+  match:
+    kinds:
+      - apiGroups: [""]
+        kinds: ["Pod"]
+    # Remove to apply to all namespaces.
+    namespaces:
+      - "demo"
+  parameters:
+    message: "Only allow images from gcr.io."
+    repos:
+      # This is prefix match, so all the "gcr.io" images are allowed.
+      - "gcr.io"
+  # Use deny to deny any creation, dryrun for audit report only.
+  enforcementAction: dryrun
