@@ -11,6 +11,8 @@ spec:
     message: "Audit non-gcr repo"
     repos:
       - "gcr.io"
+      - "k8s.gcr.io"
+      - "gke.gcr.io"
   enforcementAction: dryrun
 ---
 apiVersion: constraints.gatekeeper.sh/v1beta1
@@ -28,4 +30,6 @@ spec:
     message: "Deny non-gcr repo."
     repos:
       - "gcr.io"
+      - "k8s.gcr.io"
+      - "gke.gcr.io"
   enforcementAction: deny
