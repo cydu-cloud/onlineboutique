@@ -65,8 +65,6 @@ apiVersion: networking.istio.io/v1alpha3
 kind: ServiceEntry
 metadata:
   name: whitelist-egress-googleapis
-  annotations:
-    configmanagement.gke.io/cluster-selector: sfo
 spec:
   hosts:
   - "accounts.google.com" # Used to get token
@@ -83,8 +81,6 @@ apiVersion: networking.istio.io/v1alpha3
 kind: ServiceEntry
 metadata:
   name: whitelist-egress-google-metadata
-  annotations:
-    configmanagement.gke.io/cluster-selector: sfo
 spec:
   hosts:
   - metadata.google.internal
