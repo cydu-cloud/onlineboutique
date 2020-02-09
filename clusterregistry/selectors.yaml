@@ -10,6 +10,15 @@ spec:
 kind: ClusterSelector
 apiVersion: configmanagement.gke.io/v1
 metadata:
+  name: nyc
+spec:
+  selector:
+    matchLabels:
+      environment: nyc
+---
+kind: ClusterSelector
+apiVersion: configmanagement.gke.io/v1
+metadata:
   name: pek
 spec:
   selector:
