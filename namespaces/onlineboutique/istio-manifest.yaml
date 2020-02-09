@@ -81,7 +81,7 @@ kind: ServiceEntry
 metadata:
   name: whitelist-egress-googleapis
   annotations:
-    configmanagement.gke.io/cluster-selector: test
+    configmanagement.gke.io/cluster-selector: nyc
 spec:
   hosts:
   - "accounts.google.com" # Used to get token
