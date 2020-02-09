@@ -1,20 +1,20 @@
 kind: Cluster
 apiVersion: clusterregistry.k8s.io/v1alpha1
 metadata:
-  name: ae96a3a2-c5b1-4dc4-9df4-b44db1ee4ef2
+  name: b1d52dcf-d648-4115-b7a6-4b68735f6400
   labels:
     environment: sfo
 ---
 kind: Cluster
 apiVersion: clusterregistry.k8s.io/v1alpha1
 metadata:
-  name: 975aa03a-4ae9-11ea-901b-42010a80008b
+  name: a895e5aa-4b00-11ea-ae11-42010af00002
   labels:
     environment: nyc
 ---
 kind: Cluster
 apiVersion: clusterregistry.k8s.io/v1alpha1
 metadata:
-  name: bd966bb2-4ae9-11ea-a9e9-42010a80008e
+  name: 66f0ab1c-4b00-11ea-adb0-42010a8000aa
   labels:
     environment: pek
