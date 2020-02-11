@@ -20,6 +20,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: emailservice
+  annotations:
+    configmanagement.gke.io/cluster-selector: cal
 spec:
   selector:
     matchLabels:
@@ -68,6 +70,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: shoppingcartservice
+  annotations:
+    configmanagement.gke.io/cluster-selector: cal
 spec:
   selector:
     matchLabels:
@@ -128,6 +132,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: recommendationservice
+  annotations:
+    configmanagement.gke.io/cluster-selector: cal
 spec:
   selector:
     matchLabels:
@@ -179,6 +185,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: frontend
+  annotations:
+    configmanagement.gke.io/cluster-selector: cal
 spec:
   selector:
     matchLabels:
@@ -248,6 +256,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: paymentservice
+  annotations:
+    configmanagement.gke.io/cluster-selector: cal
 spec:
   selector:
     matchLabels:
@@ -297,6 +307,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: productcatalogservice
+  annotations:
+    configmanagement.gke.io/cluster-selector: cal
 spec:
   selector:
     matchLabels:
@@ -346,6 +358,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: cartservice
+  annotations:
+    configmanagement.gke.io/cluster-selector: cal
 spec:
   selector:
     matchLabels:
@@ -402,6 +416,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: loadgenerator
+  annotations:
+    configmanagement.gke.io/cluster-selector: cal
 spec:
   selector:
     matchLabels:
@@ -445,6 +461,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: currencyservice
+  annotations:
+    configmanagement.gke.io/cluster-selector: cal
 spec:
   selector:
     matchLabels:
@@ -495,6 +513,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: shippingservice
+  annotations:
+    configmanagement.gke.io/cluster-selector: cal
 spec:
   selector:
     matchLabels:
@@ -544,6 +564,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: redis-cart
+  annotations:
+    configmanagement.gke.io/cluster-selector: cal
 spec:
   selector:
     matchLabels:
@@ -597,6 +619,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: adservice
+  annotations:
+    configmanagement.gke.io/cluster-selector: cal
 spec:
   selector:
     matchLabels:
