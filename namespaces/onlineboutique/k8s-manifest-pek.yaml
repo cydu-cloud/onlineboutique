@@ -332,7 +332,7 @@ spec:
   selector:
     matchLabels:
       app: loadgenerator
-  replicas: 2
+  replicas: 1
   template:
     metadata:
       labels:
@@ -342,17 +342,6 @@ spec:
       imagePullSecrets:
         - name: qcloudregistrykey
       restartPolicy: Always
-      initContainers:
-      - name: wait-frontend
-        image: alpine:3.6
-        command: ['sh', '-c', 'set -x;  apk add --no-cache curl &&
-          until timeout -t 2 curl -f "http://${FRONTEND_ADDR}"; do
-            echo "waiting for http://${FRONTEND_ADDR}";
-            sleep 2;
-          done;']
-        env:
-        - name: FRONTEND_ADDR
-          value: "frontend:80"
       containers:
       - name: main
         image: ccr.ccs.tencentyun.com/abox-cy/gcr.io-google-samples-microservices-demo-loadgenerator:v0.1.2
@@ -469,7 +458,7 @@ spec:
         - name: qcloudregistrykey
       containers:
       - name: redis
-        image: redis:alpine
+        image: ccr.ccs.tencentyun.com/abox-cy/docker.io-redis:alpine
         ports:
         - containerPort: 6379
         readinessProbe:
