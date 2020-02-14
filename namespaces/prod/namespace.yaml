@@ -5,4 +5,4 @@ metadata:
   labels:
     istio-injection: enabled
   annotations:
-    configmanagement.gke.io/cluster-selector: nyc
+    configmanagement.gke.io/cluster-selector: cal
