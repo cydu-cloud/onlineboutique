@@ -1,13 +1,13 @@
 kind: Cluster
 apiVersion: clusterregistry.k8s.io/v1alpha1
 metadata:
-  name: 52496d69-f7ae-4d9d-a65f-85e587b8df6f
+  name: 9703caf0-a519-4618-8fd0-080be411243d
   labels:
     location: cal
 ---
 kind: Cluster
 apiVersion: clusterregistry.k8s.io/v1alpha1
 metadata:
-  name: 58a94aaf-4eeb-11ea-b20f-42010a800244
+  name: 78b56d73-4f6b-11ea-b1df-42010a8002bb
   labels:
-    location: cal
+    location: pek
