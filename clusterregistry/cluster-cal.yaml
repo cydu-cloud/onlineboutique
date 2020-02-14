@@ -1,6 +1,6 @@
 kind: Cluster
 apiVersion: clusterregistry.k8s.io/v1alpha1
 metadata:
-  name: cal
+  name: f673ffcd-4c44-11ea-911c-42010a8000aa
   labels:
     location: cal

@@ -1,6 +1,6 @@
 kind: Cluster
 apiVersion: clusterregistry.k8s.io/v1alpha1
 metadata:
-  name: pek
+  name: b7027d0e-4d0b-11ea-b198-868f27f9c908
   labels:
     location: pek
