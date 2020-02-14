@@ -81,7 +81,7 @@ kind: ServiceEntry
 metadata:
   name: whitelist-egress-googleapis
   annotations:
-    configmanagement.gke.io/cluster-selector: nyc
+    configmanagement.gke.io/cluster-selector: cal
 spec:
   hosts:
   - "accounts.google.com" # Used to get token
@@ -99,7 +99,7 @@ kind: ServiceEntry
 metadata:
   name: whitelist-egress-google-metadata
   annotations:
-    configmanagement.gke.io/cluster-selector: sfo
+    configmanagement.gke.io/cluster-selector: cal
 spec:
   hosts:
   - metadata.google.internal
